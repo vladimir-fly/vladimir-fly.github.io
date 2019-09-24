@@ -1,56 +1,74 @@
 
 # UAT (Unity application template)
 
-+ RawData - Элементарные данные 
-    + Images
-        + Textures
-        + Maps
-        + Icons
-        + Atlases
-        + ...
++ Sources - Основные ресурсы
+    + Primitives - Элементарные данные 
+        + Images
+            + Textures
+            + Maps
+            + Icons
+            + Atlases
+            + ...
     
-    + Audio
-        + Music
-        + Sounds
+        + Audio
+            + Music
+            + Sounds
+            + ...
+
+        + Meshes
+            + Props
+            + Characters
+            + Buildings
+            + ...
+
+        + Fonts
+        + Video
+        + Text
+        + Materials
         + ...
 
-    + Meshes
-        + Props
-        + Characters
-        + Buildings
+    + Complex - Элементарные данные, сгруппированные в законченные сущности
+        + Models
+            + Vehicles
+            + Characters
+            + Buildings
+            + ...
+        + Controls
+        + Forms
+        + Screens
         + ...
 
-    + Fonts
-    + Video
-    + TextData
-    + Materials
-    + Lights
-    + ...
-
-+ CombinedResources - Данные, сгруппированные в логические сущности
-    + Models
-        + Vehicles
-        + Characters
-    + Controls
-    + ...
-
-+ Containers - Сущности, объединяющие элементарные и сгруппированные данные
-    + Prefabs
-        + Terrain
-    + Scenes
-    + Bundles
-    + ...
+    + Containers - Сущности, объединяющие элементарные и сгруппированные данные
+        + Prefabs
+            + Terrain
+        + Scenes
+        + Bundles
+        + Configs
+        + ...
 
 + Scripts - Код
-    + Abstracts
-    + DataTypes
+    + Bases
+        + Abstracts
+        + Headers
+        + Enums
+
+    + Structures
+        + DataTypes
+        + Entities
+        + Commands
+        + Handlers
+        + States
+        
     + Managers
     + Controllers
     + Helpers
-    + Extensions
-    + Modules
+        + Converters
+        + Adapters
+        + Checkers
+        + Loaders
+        + Factories
+        + Extensions
     + Shaders
-    + ...
 
 + Extras - Сторонние дополнения, расширения, плагины, системы и т.д.
     + Plugins
@@ -60,4 +78,5 @@
 + Sandbox - Временные и сгенерированные данные
     + Temp
     + Generated
+    + Experimental
     + ...
