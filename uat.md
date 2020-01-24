@@ -1,6 +1,8 @@
 
 # UAT (Unity application template)
 
+[Шаблон проекта](uat.zip)
+
 + Sources - Основные ресурсы
     + Primitives - Элементарные данные 
         + Images
@@ -24,10 +26,9 @@
         + Fonts
         + Video
         + Text
-        + Materials
         + ...
 
-    + Complex - Элементарные данные, сгруппированные в законченные сущности
+    + Complex - Элементарные ресурсы, сгруппированные в логически законченные сущности
         + Models
             + Vehicles
             + Characters
@@ -38,12 +39,13 @@
         + Screens
         + ...
 
-    + Containers - Сущности, объединяющие элементарные и сгруппированные данные
+    + Containers - Ресурсы, объединяющие элементарные и сгруппированные ресурсы
         + Prefabs
             + Terrain
         + Scenes
         + Bundles
         + Configs
+        + Materials
         + ...
 
 + Scripts - Код
