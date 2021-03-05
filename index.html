@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<!-- Yandex.Metrika counter -->
- <script type="text/javascript">
+<script type="text/javascript">
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
@@ -28,17 +28,31 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/39548850" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
-	<link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Montserrat">
+ 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
     	<style>
       		body {
         		font-family: 'Montserrat', serif;
         		font-size: 22px;
-         		background: url(wood_13_1.jpg);
+         		background: url(wood.jpg);
     			background-size: 100%;
 				background-color:darkgray;
       		}
+			
+			h1 {
+				font-family: 'Caveat', cursive;
+				font-size: 50px;
+				color: #382D7B;
+				font-weight: 400;
+			}
+			
+			dl {
+				font-family: 'Caveat', cursive;
+				font-size: 40px;
+				color: #382D7B;
+				font-weight: 400;
+			}
 			
 			a { 
 				color: inherit; 
@@ -46,32 +60,88 @@
 
 		   .links_block {
 				position:relative; 
-				top:460px; 
-				left:230px; 
+				top:440px; 
+				left:210px; 
 				max-width: 300px;
    			}
+			
+			.projects_panel {
+				z-index:-1;
+				left:30px;
+				top:-50px;
+				position:inherit;
+				animation: wiggle 6s infinite linear;
+			}
+			
+			.projects_panel:hover {	
+				animation:moveFront 0.3s forwards;			
+			}
+	  
+			.projects_title {
+				position:inherit;
+				top: 30px;
+				left: 30px;
+			}
+	  
+			.root {
+				position: absolute;
+				top: 20%;
+				left: 42%;
+				z-index: 1;
+				transform: translate(-50%, -50%);
+			}
+	  
+			@keyframes wiggle {
+				0%, 95%{ transform: rotate(0deg); }
+				97%, 96% { transform: rotate(0.5deg); }
+				97%, 98% { transform: rotate (-0.5deg); }
+ 			}
+	  
+			@keyframes moveUp {
+				0%   { left: 50px; top: -60px; }
+				100% { left: 80px; top: -100px; }
+			}
+			
+			@keyframes moveFront {
+				0% { left: 50px; }
+				25% { left: 100px; }
+				50% { left: 150px; }
+				75% { left: 100px; }
+				100% { z-index: 1; left: 50px; }
+			}
+			
     	</style>
 	</head>
 	<body>
-		<div style="position: absolute;
-    top: 20%;
-    left: 42%;
-    
-    z-index: 1;
-    transform: translate(-50%, -50%);
-
-">
+		<div class="root">
 			<div style="position:absolute">
-				<img src="id.png" alt="id" width="550px" height="700px"> 
+				<img src="id.png" alt="id" width="520px" height="650px" > 
 			</div>
 			
 			<div class="links_block">				
 				<!-- linkedin-->
 				<a href="mailto:mail@vladimir-fly.com">mail@vladimir-fly.com</a><br/>
-				<a href="http://vk.com/vladimir_fly">VK</a><br/>
-				<a href="https://career.habr.com/vladimir--fly">Habr Career (ex. Moikrug)</a><br/>
-				<a href="https://github.com/vladimir-fly">Github</a>
+				<a target="_blank" rel="noopener noreferrer" href="http://vk.com/vladimir_fly">VK</a><br/>
+				<a target="_blank" rel="noopener noreferrer" href="https://career.habr.com/vladimir--fly">Habr Career</a><br/>
+				<a target="_blank" rel="noopener noreferrer" href="https://github.com/vladimir-fly">Github</a>
 			</div>
+			
+			<div class="projects_panel">
+				<img src="notepad.png" alt="id" > 
+				<div class="projects_title">
+					<h1>Проекты / Projects</h1>
+					<div>
+						<ul>
+							<dl>
+								Epilog -
+								<a href="https://github.com/vladimir-fly/epilog">Source</a> 
+								[<a href="https://github.com/vladimir-fly/epilog/releases/download/v1.1/epilog_v1.1.0.unitypackage">Unity package</a>]</dl>
+							<dl>Ru7 <a href=""></a></dl>
+							<dl>UAT <a href=""></a></dl>
+						</ul>
+					</div>
+				</div>
+			</div>		
 		</div>
 	</body>
 </html>
