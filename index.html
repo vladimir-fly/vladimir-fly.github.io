@@ -28,8 +28,8 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/39548850" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
- 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
     	<style>
       		body {
@@ -37,7 +37,7 @@
         		font-size: 22px;
          		background: url(wood.jpg);
     			background-size: 100%;
-				background-color:darkgray;
+				background-color: darkgray;
       		}
 			
 			h1 {
@@ -59,16 +59,17 @@
 			} 
 
 		   .links_block {
-				position:relative; 
-				top:440px; 
-				left:210px; 
+				position: relative; 
+				top: 430px; 
+				left: 220px; 
 				max-width: 300px;
+				font-size: 20px;
    			}
 			
 			.projects_panel {
 				z-index:-1;
-				left:30px;
-				top:-50px;
+				left: 30px;
+				top: -50px;
 				position:inherit;
 				animation: wiggle 6s infinite linear;
 			}
@@ -90,7 +91,22 @@
 				z-index: 1;
 				transform: translate(-50%, -50%);
 			}
-	  
+
+			.sticker {
+				transform: rotate(-25deg);
+				position: relative; 
+				top: 50px; 
+				left: 380px;
+			}
+			
+			.sticker_caption {
+				font-family: 'Caveat', cursive;
+				font-size: 30px;
+				position: relative;
+				top: -80px;
+				left: 10px;
+			}
+			
 			@keyframes wiggle {
 				0%, 95%{ transform: rotate(0deg); }
 				97%, 96% { transform: rotate(0.5deg); }
@@ -110,6 +126,11 @@
 				100% { z-index: 1; left: 50px; }
 			}
 			
+			@keyframes moveBack {
+				0% { left: 100px; }
+				50% { left: 110px; }
+				100% { z-index: -1; left: 30px; }
+			}
     	</style>
 	</head>
 	<body>
@@ -117,17 +138,21 @@
 			<div style="position:absolute">
 				<img src="id.png" alt="id" width="520px" height="650px" > 
 			</div>
-			
 			<div class="links_block">				
-				<!-- linkedin-->
-				<a href="mailto:mail@vladimir-fly.com">mail@vladimir-fly.com</a><br/>
-				<a target="_blank" rel="noopener noreferrer" href="http://vk.com/vladimir_fly">VK</a><br/>
-				<a target="_blank" rel="noopener noreferrer" href="https://career.habr.com/vladimir--fly">Habr Career</a><br/>
-				<a target="_blank" rel="noopener noreferrer" href="https://github.com/vladimir-fly">Github</a>
+				<a href="mailto:mail@vladimir-fly.com">Электропочта</a><br/>
+				<a target="_blank" rel="noopener noreferrer" href="http://vk.com/vladimir_fly">ВК</a></br>
+				<a target="_blank" rel="noopener noreferrer" href="https://github.com/vladimir-fly">ГитХаб</a></br>
+				<a target="_blank" rel="noopener noreferrer" href="https://career.habr.com/vladimir_fly">Хабр.Карьера</a>
+			</div>
+			<div class="sticker">
+				<img src="sticker.png" width="100px" height="100px">
+				<div class="sticker_caption">
+					<a href="https://yandex.ru/games/app/451329">Скор-П</a>
+				</div>
 			</div>
 			
 			<div class="projects_panel">
-				<img src="notepad.png" alt="id" > 
+			<img src="notepad.png" alt="id" > 
 				<div class="projects_title">
 					<h1>Проекты / Projects</h1>
 					<div>
@@ -138,6 +163,7 @@
 								[<a href="https://github.com/vladimir-fly/epilog/releases/download/v1.1/epilog_v1.1.0.unitypackage">Unity package</a>]</dl>
 							<dl>Ru7 <a href=""></a></dl>
 							<dl>UAT <a href=""></a></dl>
+							<dl>Shf <a href=""></a></dl>
 						</ul>
 					</div>
 				</div>
